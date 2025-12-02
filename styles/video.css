@@ -1,0 +1,105 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+@media (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 999px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1499px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1500px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.thumbnail-row {
+    position: relative;
+}
+
+.time-badge {
+    position: absolute;
+    right: 7px;
+    /* top: 204px; */
+    bottom: 10px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+    
+        
+.thumbnail {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+/* .time-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2px 4px;
+    font-size: 12px;
+    border-radius: 2px;
+    z-index: 1;
+} */
+
+.video-details-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    column-gap: 6px;
+    
+}
+
+.video-title {
+    margin-top: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.video-author {
+    color: rgb(90, 90, 90);
+    margin-bottom: -10px;
+    cursor: pointer;
+}
+
+.video-stats {
+    color: rgb(90, 90, 90);
+}
+
+.channel-icon {
+    margin-top: 8px;
+    width: 50px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.profile-picture {
+    width: 45px;
+    border-radius: 50px;
+    cursor: pointer;
+}
